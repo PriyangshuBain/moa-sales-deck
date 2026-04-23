@@ -1,0 +1,12 @@
+{
+  "name": "moa-sales-deck",
+  "version": "1.0.0",
+  "description": "Mall of America - Premium Interactive Sales Deck",
+  "scripts": {
+    "dev": "echo 'Open index.html in browser'",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": ["sales-deck", "interactive", "presentation", "mall-of-america"],
+  "author": "PriyangshuBain",
+  "license": "MIT"
+}
