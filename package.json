@@ -2,9 +2,10 @@
   "name": "moa-sales-deck",
   "version": "1.0.0",
   "description": "Mall of America - Premium Interactive Sales Deck",
+  "main": "scripts/main.js",
   "scripts": {
-    "dev": "echo 'Open index.html in browser'",
-    "build": "echo 'Static site - no build required'"
+    "start": "node scripts/main.js",
+    "dev": "echo 'Open index.html in browser to view the sales deck'"
   },
   "keywords": ["sales-deck", "interactive", "presentation", "mall-of-america"],
   "author": "PriyangshuBain",
