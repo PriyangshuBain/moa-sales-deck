@@ -60,16 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
     logoObs.observe(retailSection);
   }
 
-  // TILT EFFECT
-  document.querySelectorAll('[data-tilt]').forEach(card => {
-    card.addEventListener('mousemove', e => {
-      const r = card.getBoundingClientRect();
-      const x = e.clientX - r.left, y = e.clientY - r.top;
-      const cx = r.width / 2, cy = r.height / 2;
-      card.style.transform = `perspective(1000px) rotateX(${(y - cy) / 25}deg) rotateY(${(cx - x) / 25}deg) scale(1.02)`;
-    });
-    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-  });
+  // TILT EFFECT - Simple CSS hover only
+  /* Removed JS tilt - using CSS hover instead */
 
   // MODAL
   document.querySelectorAll('[data-modal-trigger]').forEach(btn => {
