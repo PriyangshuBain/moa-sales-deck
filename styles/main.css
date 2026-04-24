@@ -126,6 +126,57 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
+/* 🔥 FIX: LET'S MAKE HISTORY (SECTION-7) */
+/* ============================= */
+
+#section-7 .cta-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+#section-7 .cta-card {
+  min-height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  border: 1px solid rgba(201, 169, 98, 0.6);
+  box-shadow: 0 0 20px rgba(201, 169, 98, 0.15);
+  transition: all 0.4s ease;
+}
+
+/* OVERLAY */
+#section-7 .cta-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+}
+
+/* TEXT STYLE */
+#section-7 .cta-card > * {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+/* HOVER EFFECT */
+#section-7 .cta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(201, 169, 98, 0.25);
+}
+
+/* ============================= */
+/* END */
+/* ============================= */
+
+/* ============================= */
 /* 🔥 FIX: EVENTS & PLATFORM (SECTION-6) */
 /* ============================= */
 
