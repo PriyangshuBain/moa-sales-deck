@@ -126,6 +126,33 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
+/* 🔥 FIX: EVENTS BUTTON (SECTION-6) */
+/* ============================= */
+
+#section-6 .events-cta .btn {
+  border: 1px solid rgba(201,169,98,0.8);
+  background: transparent;
+  color: #c9a962;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#section-6 .events-cta .btn:hover {
+  background-color: rgba(201,169,98,0.15);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(201,169,98,0.3);
+}
+
+#section-6 .events-cta .btn:active {
+  transform: scale(0.96);
+  box-shadow: none;
+}
+
+/* ============================= */
+/* END */
+/* ============================= */
+
+/* ============================= */
 /* 🔥 FIX: LET'S MAKE HISTORY (SECTION-7) */
 /* ============================= */
 
