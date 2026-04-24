@@ -30,11 +30,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 .logo-item{display:flex;align-items:center;justify-content:center;height:72px;background:var(--bg-tertiary);border-radius:2px;font-family:var(--font-display);font-size:13px;color:var(--text-secondary);transition:all var(--transition-base);opacity:0;transform:translateY(10px);background-size:cover;background-position:center}
 
-/* FIX EVENTS SECTION (#section-6) */
-#section-6 .grid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-#section-6 .event-card{height:160px;border-radius:10px;overflow:hidden;position:relative;cursor:pointer;transition:all 0.4s cubic-bezier(0.16,1,0.3,1)}
-#section-6 .event-card *{color:#fff !important;z-index:2;position:relative}
-#section-6 .event-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3))}
-#section-6 .event-card > *.{transition:0.4s}
-#section-6 .event-card:hover{transform:scale(1.05);box-shadow:0 20px 60px rgba(0,0,0,0.5)}
-@media(max-width:900px){#section-6 .grid{grid-template-columns:1fr}}
+/* FIX ENTERTAINMENT SECTION (#section-5) - 3 HORIZONTAL CARDS */
+#section-5 .ent-grid{display:flex;flex-direction:column;gap:20px}
+#section-5 .ent-card{height:180px;border-radius:12px;overflow:hidden;position:relative;cursor:pointer;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);background-size:cover;background-position:center;width:100%;display:flex;align-items:center;padding:30px}
+#section-5 .ent-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.85),transparent)}
+#section-5 .ent-card >*{position:relative;z-index:2;color:#fff}
+#section-5 .ent-card h3{font-size:24px;font-weight:600;margin-bottom:8px}
+#section-5 .ent-card p{font-size:14px;color:#ccc}
+#section-5 .ent-card-badge{display:inline-block;padding:6px 12px;background:var(--gold);color:var(--bg-primary);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;border-radius:4px;margin-bottom:10px}
+#section-5 .ent-card:hover{transform:scale(1.02);box-shadow:0 15px 40px rgba(0,0,0,0.4)}
