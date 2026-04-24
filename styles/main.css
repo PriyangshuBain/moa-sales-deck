@@ -126,6 +126,136 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
+/* 🔥 FIX: EVENTS & PLATFORM (SECTION-6) */
+/* ============================= */
+
+#section-6 .grid,
+#section-6 .events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+#section-6 .event-card {
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+/* LIGHTER OVERLAY */
+#section-6 .event-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+}
+
+/* TEXT STYLE */
+#section-6 .event-card > * {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  transform: translateY(10px);
+  opacity: 0.85;
+  transition: all 0.5s ease;
+}
+
+/* HOVER EFFECT */
+#section-6 .event-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  filter: brightness(1.1);
+}
+
+#section-6 .event-card:hover > * {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ============================= */
+/* END */
+/* ============================= */
+
+/* ============================= */
+/* 🔥 FIX: EVENTS & PLATFORM (SECTION-4) */
+/* ============================= */
+
+#section-4 .grid,
+#section-4 .dining-grid,
+#section-4 .events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+#section-4 .dining-card,
+#section-4 .event-card {
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  filter: brightness(1.05) contrast(1.1) saturate(1.1);
+  transform: scale(1.03);
+  transition: all 0.5s ease;
+}
+
+/* LIGHTER OVERLAY */
+#section-4 .dining-card::after,
+#section-4 .event-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
+}
+
+/* TEXT STYLE */
+#section-4 .dining-card > *,
+#section-4 .event-card > * {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  transform: translateY(10px);
+  opacity: 0.85;
+  transition: all 0.5s ease;
+}
+
+/* HOVER EFFECT */
+#section-4 .dining-card:hover,
+#section-4 .event-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  filter: brightness(1.1);
+}
+
+#section-4 .dining-card:hover > *,
+#section-4 .event-card:hover > * {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ============================= */
+/* END */
+/* ============================= */
+
+/* ============================= */
 /* 🔥 FIX 3: BEYOND SHOPPING (SECTION-5) */
 /* ============================= */
 
