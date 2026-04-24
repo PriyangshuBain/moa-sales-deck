@@ -39,6 +39,76 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .highlight-card{background:var(--bg-secondary);border:1px solid rgba(255,255,255,0.05);border-radius:4px;padding:var(--space-lg);position:relative;overflow:hidden;transition:all var(--transition-base);background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end}
 .logo-item{display:flex;align-items:center;justify-content:center;height:72px;background:var(--bg-tertiary);border-radius:2px;font-family:var(--font-display);font-size:13px;color:var(--text-secondary);transition:all var(--transition-base);opacity:0;transform:translateY(10px);background-size:cover;background-position:center}
 
+/* FIX LUXURY SECTION (#section-3) - 3-COLUMN GRID */
+#section-3 .luxury-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 60px;
+}
+
+#section-3 .luxury-card {
+  position: relative;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+}
+
+#section-3 .luxury-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  z-index: 1;
+}
+
+#section-3 .luxury-card-brand,
+#section-3 .luxury-card-cat,
+#section-3 .card-title,
+#section-3 .card-description {
+  position: relative;
+  z-index: 2;
+}
+
+#section-3 .luxury-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+#section-3 .luxury-card-brand {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#section-3 .luxury-card-cat {
+  font-size: 13px;
+  color: #c9a962;
+}
+
+#section-3 .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+#section-3 .card-description {
+  font-size: 13px;
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  #section-3 .luxury-showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* FIX ENTERTAINMENT SECTION (#section-5) - 3 IMAGE STRIPS */
 #section-5 .ent-grid {
   display: flex;
