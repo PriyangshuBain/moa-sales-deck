@@ -36,31 +36,47 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 #section-3 .luxury-showcase{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:25px;
+  gap:28px;
 }
 
-#section-3 .highlight-card{
+/* CARD DESIGN */
+#section-3 .luxury-card{
   height:280px;
   border-radius:12px;
   overflow:hidden;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
   display:flex;
   align-items:flex-end;
-  padding:20px;
-  position:relative;
+  padding:24px;
+  border:1px solid rgba(255,255,255,0.08);
+  filter:contrast(1.1) brightness(1.05) saturate(1.1);
+  transform:scale(1.05);
+  transition:all 0.5s ease;
 }
 
-/* overlay */
-#section-3 .highlight-card::after{
+/* DARK OVERLAY (reduced intensity) */
+#section-3 .luxury-card::after{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  background:linear-gradient(to top, rgba(0,0,0,0.5), transparent);
 }
 
-/* hover */
-#section-3 .highlight-card:hover{
-  transform:translateY(-8px);
-  box-shadow:0 20px 50px rgba(0,0,0,0.4);
+/* TEXT STYLE */
+#section-3 .luxury-card > *{
+  position:relative;
+  z-index:2;
+  color:#fff;
+}
+
+/* HOVER EFFECT */
+#section-3 .luxury-card:hover{
+  transform:scale(1.12);
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+  filter:brightness(1.1) contrast(1.1);
 }
 
 /* ============================= */
