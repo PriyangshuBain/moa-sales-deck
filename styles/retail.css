@@ -188,3 +188,84 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ============================= */
+/* CIRCULAR TENANTS (#section-2) */
+/* ============================= */
+
+#section-2 .retail-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-2 .tenants-title {
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* CIRCLE CONTAINER */
+#section-2 .tenant-circle {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+/* GLOW BACKGROUND */
+#section-2 .tenant-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,169,98,0.25), transparent 70%);
+  filter: blur(50px);
+}
+
+/* OUTER RING */
+#section-2 .tenant-circle::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(201,169,98,0.3);
+  border-radius: 50%;
+}
+
+/* BASE LOGO STYLE */
+#section-2 .logo-item {
+  position: absolute;
+  opacity: 1 !important;
+  transform: none !important;
+  background: none;
+  height: auto;
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* CENTER */
+#section-2 .logo-item.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* CIRCLE POSITIONS */
+#section-2 .t1 { top: 0; left: 50%; transform: translate(-50%, -50%); }
+#section-2 .t2 { top: 20%; right: 0; }
+#section-2 .t3 { top: 50%; right: -10px; transform: translateY(-50%); }
+#section-2 .t4 { bottom: 20%; right: 0; }
+#section-2 .t5 { bottom: 0; left: 50%; transform: translate(-50%, 50%); }
+#section-2 .t6 { bottom: 20%; left: 0; }
+#section-2 .t7 { top: 50%; left: -10px; transform: translateY(-50%); }
+#section-2 .t8 { top: 20%; left: 0; }
+#section-2 .t9 { bottom: -20px; right: 20%; }
+#section-2 .t10 { bottom: -20px; left: 20%; }
+
+/* HOVER */
+#section-2 .logo-item:hover {
+  color: #c9a962;
+}
