@@ -39,39 +39,27 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .highlight-card{background:var(--bg-secondary);border:1px solid rgba(255,255,255,0.05);border-radius:4px;padding:var(--space-lg);position:relative;overflow:hidden;transition:all var(--transition-base);background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end}
 .logo-item{display:flex;align-items:center;justify-content:center;height:72px;background:var(--bg-tertiary);border-radius:2px;font-family:var(--font-display);font-size:13px;color:var(--text-secondary);transition:all var(--transition-base);opacity:0;transform:translateY(10px);background-size:cover;background-position:center}
 
-/* FIX LUXURY SECTION (#section-3) */
-#section-3 .luxury-showcase {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 60px;
-}
-@media (max-width: 900px) {
-  #section-3 .luxury-showcase { grid-template-columns: 1fr; }
-}
-#section-3 .luxury-card {
-  position: relative;
-  height: 280px;
-  border-radius: 12px;
-  overflow: hidden;
+/* FIX ENTERTAINMENT SECTION (#section-5) - 3 IMAGE STRIPS */
+#section-5 .ent-grid {
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
+  flex-direction: column;
+  gap: 24px;
 }
-#section-3 .luxury-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-  z-index: 1;
+
+#section-5 .ent-card {
+  min-height: 160px;
+  border: 1px solid rgba(201,169,98,0.4);
+  box-shadow: 0 0 20px rgba(201,169,98,0.2);
+  border-radius: 8px;
+  overflow: hidden;
 }
-#section-3 .luxury-card * { position: relative; z-index: 2; }
-#section-3 .luxury-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+
+#section-5 .ent-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(201,169,98,0.3);
 }
-#section-3 .luxury-card-brand { font-size: 20px; font-weight: 600; }
-#section-3 .luxury-card-cat { font-size: 13px; color: #ccc; }
+
+#section-5 .ent-card-badge {
+  top: 16px;
+  right: 16px;
+}
