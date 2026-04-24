@@ -25,16 +25,66 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .nav-dot:hover{border-color:var(--gold);transform:scale(1.2)}.nav-dot.active{background:var(--gold);border-color:var(--gold);box-shadow:0 0 20px rgba(201, 169, 98, 0.4)}
 @media(max-width:768px){.nav-dots{display:none}}
 
-/* Only scope highlight-card to #section-4 */
-#section-4 .highlight-card{background:var(--bg-secondary);border:1px solid rgba(255,255,255,0.05);border-radius:4px;padding:var(--space-lg);position:relative;overflow:hidden;transition:all var(--transition-base);background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end}
+.highlight-card{background:var(--bg-secondary);border:1px solid rgba(255,255,255,0.05);border-radius:4px;padding:var(--space-lg);position:relative;overflow:hidden;transition:all var(--transition-base);background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:flex-end}
 
 .logo-item{display:flex;align-items:center;justify-content:center;height:72px;background:var(--bg-tertiary);border-radius:2px;font-family:var(--font-display);font-size:13px;color:var(--text-secondary);transition:all var(--transition-base);opacity:0;transform:translateY(10px);background-size:cover;background-position:center}
 
-/* FIX EVENTS SECTION (#section-6) */
-#section-6 .grid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-#section-6 .event-card{height:160px;border-radius:10px;overflow:hidden;position:relative;cursor:pointer;transition:all 0.4s cubic-bezier(0.16,1,0.3,1)}
-#section-6 .event-card *{color:#fff !important;z-index:2;position:relative}
-#section-6 .event-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.85),rgba(0,0,0,0.3))}
-#section-6 .event-card > *.{transition:0.4s}
-#section-6 .event-card:hover{transform:scale(1.05);box-shadow:0 20px 60px rgba(0,0,0,0.5)}
-@media(max-width:900px){#section-6 .grid{grid-template-columns:1fr}}
+/* ============================= */
+/* 🔥 YOUR EVENTS SECTION FIX */
+/* ============================= */
+
+#section-4 .events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#section-4 .highlight-card {
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* FIX BLACK TEXT */
+#section-4 .highlight-card * {
+  color: #fff !important;
+  z-index: 2;
+  position: relative;
+}
+
+/* DARK OVERLAY */
+#section-4 .highlight-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3));
+}
+
+/* TEXT ANIMATION */
+#section-4 .highlight-card > * {
+  transform: translateY(15px);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+#section-4 .highlight-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+/* TEXT SHOW */
+#section-4 .highlight-card:hover > * {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  #section-4 .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
