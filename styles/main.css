@@ -108,3 +108,53 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 /* END */
 /* ============================= */
+
+/* ============================= */
+/* 🔥 FIX 3: BEYOND SHOPPING (SECTION-5) */
+/* ============================= */
+
+#section-5 .ent-grid{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+#section-5 .ent-card{
+  height:180px;
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:30px;
+  border:1px solid rgba(201,169,98,0.6);
+  box-shadow:0 0 20px rgba(201,169,98,0.15);
+  background-size:cover;
+  background-position:center;
+}
+
+/* overlay */
+#section-5 .ent-card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to right,rgba(0,0,0,0.85),transparent);
+}
+
+/* text fix */
+#section-5 .ent-card *{
+  color:#fff !important;
+  position:relative;
+  z-index:2;
+}
+
+/* hover */
+#section-5 .ent-card:hover{
+  transform:scale(1.02);
+  box-shadow:0 0 30px rgba(201,169,98,0.3);
+}
+
+/* ============================= */
+/* END */
+/* ============================= */
