@@ -392,3 +392,14 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
      - m s - o v e r f l o w - s t y l e :   n o n e ; 
  }  
  
+ 
+ / *   F I X :   S e c t i o n - 3   s c r o l l b a r   * / 
+ # s e c t i o n - 3   . l u x u r y - s h o w c a s e   { 
+     o v e r f l o w :   h i d d e n ; 
+     w i d t h :   1 0 0 % ; 
+ } 
+ 
+ # s e c t i o n - 3   . l u x u r y - c a r d   { 
+     o v e r f l o w :   h i d d e n ; 
+ }  
+ 
