@@ -30,7 +30,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .logo-item{display:flex;align-items:center;justify-content:center;height:72px;background:var(--bg-tertiary);border-radius:2px;font-family:var(--font-display);font-size:13px;color:var(--text-secondary);transition:all var(--transition-base);opacity:0;transform:translateY(10px);background-size:cover;background-position:center}
 
 /* ============================= */
-/* 🔥 FIX 1: CURATED LUXURY (SECTION-3) */
+/*CURATED LUXURY */
 /* ============================= */
 
 #section-3 .luxury-showcase{
@@ -80,7 +80,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 
 /* ============================= */
-/* 🔥 FIX 2: BEYOND SHOPPING (SECTION-4) */
+/* BEYOND SHOPPING  */
 /* ============================= */
 
 #section-4 .events-grid{
@@ -126,7 +126,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
-/* 🔥 FIX: EVENTS BUTTON (SECTION-6) */
+/*  EVENTS BUTTON /
 /* ============================= */
 
 #section-6 .events-cta .btn {
@@ -153,7 +153,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
-/* 🔥 FIX: LET'S MAKE HISTORY (SECTION-7) */
+/*  */
 /* ============================= */
 
 #section-7 .cta-grid {
@@ -204,7 +204,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
-/* 🔥 FIX: EVENTS & PLATFORM (SECTION-6) */
+/*  EVENTS & PLATFORM  */
 /* ============================= */
 
 #section-6 .grid,
@@ -266,7 +266,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
-/* 🔥 FIX: EVENTS & PLATFORM (SECTION-4) */
+/* EVENTS & PLATFORM  */
 /* ============================= */
 
 #section-4 .grid,
@@ -334,7 +334,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 
 /* ============================= */
-/* 🔥 FIX 3: BEYOND SHOPPING (SECTION-5) */
+/*  BEYOND SHOPPING */
 /* ============================= */
 
 #section-5 .ent-grid{
@@ -390,7 +390,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
  h t m l   { 
      s c r o l l b a r - w i d t h :   n o n e ; 
      - m s - o v e r f l o w - s t y l e :   n o n e ; 
- }  
+ } 
+ 
  
  
  / *   F I X :   S e c t i o n - 3   s c r o l l b a r   * / 
@@ -401,7 +402,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
  
  # s e c t i o n - 3   . l u x u r y - c a r d   { 
      o v e r f l o w :   h i d d e n ; 
- }  
+ } 
+ 
  
  
  / *   F I X :   E v e n t s   M o d a l   L a y o u t   * / 
@@ -456,7 +458,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
          g r i d - t e m p l a t e - c o l u m n s :   1 f r ; 
          g a p :   3 0 p x ; 
      } 
- }  
+ } 
+ 
  
  
  / *   E v e n t s   M o d a l   A n i m a t i o n   * / 
@@ -489,7 +492,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
  . e v e n t - i t e m . v i s i b l e   { 
      o p a c i t y :   1 ; 
      t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ; 
- }  
+ } 
+ 
  
  
  / *   F a d e   U p   A n i m a t i o n   * / 
@@ -502,5 +506,6 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
  . f a d e - u p . s h o w   { 
      o p a c i t y :   1 ; 
      t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ; 
- }  
+ } 
+ 
  
