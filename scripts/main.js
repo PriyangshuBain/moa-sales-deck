@@ -68,8 +68,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // MODAL
   document.querySelectorAll('[data-modal-trigger]').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.getElementById(btn.dataset.modalTrigger)?.classList.add('active');
+      const modal = document.getElementById(btn.dataset.modalTrigger);
+      modal?.classList.add('active');
       document.body.style.overflow = 'hidden';
+      // Trigger animation
+      setTimeout(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        modal?.querySelectorAll('.fade-up, .venue-item, .event-item').forEach((el, i) => {
+          el.style.transitionDelay = (i * 0.1) + 's';
+          observer.observe(el);
+        });
+      }, 100);
     });
   });
   document.querySelector('.modal-close')?.addEventListener('click', () => {
