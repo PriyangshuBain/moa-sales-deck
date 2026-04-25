@@ -491,3 +491,16 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
      t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ; 
  }  
  
+ 
+ / *   F a d e   U p   A n i m a t i o n   * / 
+ . f a d e - u p   { 
+     o p a c i t y :   0 ; 
+     t r a n s f o r m :   t r a n s l a t e Y ( 4 0 p x ) ; 
+     t r a n s i t i o n :   a l l   0 . 8 s   e a s e ; 
+ } 
+ 
+ . f a d e - u p . s h o w   { 
+     o p a c i t y :   1 ; 
+     t r a n s f o r m :   t r a n s l a t e Y ( 0 ) ; 
+ }  
+ 

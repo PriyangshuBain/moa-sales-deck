@@ -117,6 +117,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // SCROLL ANIMATIONS (Events Section)
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('#section-6 .fade-up').forEach(el => observer.observe(el));
+
   // KEYBOARD NAV
   let current = 0;
   document.addEventListener('keydown', e => {
