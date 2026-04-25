@@ -5,14 +5,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
-  // LOADER
-  const loader = document.getElementById('loader');
-  if (loader) {
-    setTimeout(() => {
-      loader.classList.add('hidden');
-      triggerHeroAnimations();
-    }, 2000);
-  }
+  // Trigger hero animations immediately
+  triggerHeroAnimations();
 
   // NAVIGATION
   document.querySelectorAll('.nav-dot').forEach(dot => {
