@@ -1,6 +1,6 @@
 :root{--bg-primary:#0a0a0a;--bg-secondary:#0d0d0d;--bg-tertiary:#141414;--bg-elevated:#1a1a1a;--gold:#c9a962;--gold-light:#e8d5a3;--text-primary:#fff;--text-secondary:#a0a0a0;--text-muted:#666;--space-xs:8px;--space-sm:16px;--space-md:24px;--space-lg:48px;--space-xl:80px;--space-2xl:120px;--font-display:'Cormorant Garamond',Georgia,serif;--font-body:'Montserrat',sans-serif;--font-mono:'Space Mono',monospace;--ease-out:cubic-bezier(0.16,1,0.3,1);--transition-fast:0.15s var(--ease-out);--transition-base:0.3s var(--ease-out)}
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-snap-type:y mandatory;-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;scroll-snap-type:y mandatory;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 body{font-family:var(--font-body);background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
@@ -382,3 +382,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* ============================= */
 /* END */
 /* ============================= */
+ 
+ / *   H i d e   S c r o l l b a r   * / 
+ : : - w e b k i t - s c r o l l b a r   { 
+     d i s p l a y :   n o n e ; 
+ } 
+ h t m l   { 
+     s c r o l l b a r - w i d t h :   n o n e ; 
+     - m s - o v e r f l o w - s t y l e :   n o n e ; 
+ }  
+ 
